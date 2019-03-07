@@ -8,7 +8,7 @@ Sorts files to dirs and works like a daemon.
 ````
 sudo nano /etc/systemd/system/filemover.service
 ````
-Add to ```/etc/systemd/system/{filename}.service```:
+**Add to ```/etc/systemd/system/{filename}.service```**:
 ```
 [Unit]
 
