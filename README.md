@@ -1,17 +1,14 @@
 **Filemover**
 
 Async filemover for Linux.
+Sorts files to dirs and works like a daemon.
 
-Sorts files to dirs and works like a daemon
+**Add to ```/etc/systemd```**
 
-**Add to /etc/systemd**
-
-Add this to /etc/systemd/system/{filename}.service
-
-**Example:**
 ````
 sudo nano /etc/systemd/system/filemover.service
 ````
+Add to ```/etc/systemd/system/{filename}.service```:
 ```
 [Unit]
 
