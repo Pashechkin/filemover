@@ -2,13 +2,15 @@
 This is async filemover for Linux.
 Sorts files to dirs and works like a daemon
 
-#Add to /etc/systemd
+**Add to /etc/systemd**
+
 Add this to /etc/systemd/system/{filename}.service
 
-Example:
+**Example:**
+
 sudo nano /etc/systemd/system/filemover.service
 
-[Unit]
+**[Unit]**
 
 Description=FileMover
 
@@ -16,7 +18,7 @@ After=syslog.target
 
 After=dir.target
 
-[Service]
+**[Service]**
 
 Type=simple
 
@@ -26,11 +28,12 @@ ExecStart=/usr/bin/python /home/{user}/todaemon/filemover.py
 
 Restart=always
 
-[Install]
+**[Install]**
 
 WantedBy=multi-user.target
 
-#Enable and run
+
+**Enable and run**
 
 sudo systemctl enable filemover.service
 
